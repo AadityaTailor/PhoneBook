@@ -20,7 +20,7 @@ const Contacts = () => {
 	const addOrEdit = obj => {
 
 
-		if (currentId == "")
+		if (currentId === "")
 			firebaseDb.child("contacts").push(
 				obj,
 				err => {
