@@ -11,7 +11,7 @@ const ContactForm = (props) => {
 	var [values, setValues] = useState(initialFieldName)
 
 	useEffect(()=>{
-		if(props.currentId==''){
+		if(props.currentId===''){
 			setValues({
 				...initialFieldName
 			})
